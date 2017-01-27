@@ -1,0 +1,17 @@
+
+
+<table>
+  <thead>
+<tr>
+  <th>name</th>
+  <th>cover</th>
+
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jeu of jeux">
+      <td>{{jeu['name']}}</td>
+      <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+    </tr>
+  </tbody>
+</table>
