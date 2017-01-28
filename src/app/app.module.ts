@@ -11,6 +11,7 @@ import { SteamService } from './steam.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     STEAMComponent,
     HeaderComponent,
     FooterComponent,
-    AccueilComponent
+    AccueilComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
@@ -28,11 +30,15 @@ import { AccueilComponent } from './accueil/accueil.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: AccueilComponent
+        component: AccueilComponent,
       },
       {
-        path: 'bibliotheque',
+        path: 'Bibliotheque',
         component: STEAMComponent
+      },
+      {
+        path: 'presentation',
+        component: PresentationComponent
       }
     ])
   ],

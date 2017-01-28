@@ -1,6 +1,14 @@
+<h1>Présentation de STEAM</h1>
+
+<p>Steam est une célèbre plateforme de distribution de jeux en ligne.
+  Au début, son contenu se cantonnait juste aux jeux développés par l'éditeur seulement mais désormais
+  la plateforme met à disposition une large variété de jeux. </p>
+
+<h2>Voici le top 3 des jeux de la semaine</h2>
+
 <table>
   <tr *ngFor="let jeu of jeux">
-    <td>{{jeu['name']}}</td>
-    <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+    <td><a routerLink="/presentation">{{jeu['name']}}</a></td>
+    <td><a routerLink="/presentation"><img src="{{jeu['cover']['url']}}" alt=""></a></td>
   </tr>
 </table>

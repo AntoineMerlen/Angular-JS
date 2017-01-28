@@ -1,17 +1,9 @@
+<h1>Voici notre selection de jeux</h1>
 
 
 <table>
-  <thead>
-<tr>
-  <th>name</th>
-  <th>cover</th>
-
-</tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let jeu of jeux">
-      <td>{{jeu['name']}}</td>
-      <td><img src="{{jeu['cover']['url']}}" alt=""></td>
-    </tr>
-  </tbody>
+  <tr *ngFor="let jeu of jeux">
+    <td><a routerLink="/presentation">{{jeu['name']}}</a></td>
+    <td><a routerLink="/presentation"><img src="{{jeu['cover']['url']}}" alt=""></a></td>
+  </tr>
 </table>
